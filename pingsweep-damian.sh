@@ -7,7 +7,7 @@ function pingsweep_cmd()
 	local total=0
 	local base="onyxnode"
 	echo "Starting ping sweep..."
-	for i in {1..10}; do 
+	for i in {10..117}; do 
 		ping -c 1 "${base}${i}" &> ping.log
 		if [ $? -eq 0 ]; then
 			echo "${base}${i} is reachable."
